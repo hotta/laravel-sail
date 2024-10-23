@@ -8,3 +8,7 @@ Route::get('/', function () {
 Route::get('/home', function() {
     return view('home');
 });
+Route::get('/phpinfo', function() {
+    xdebug_info();
+    phpinfo();
+});
